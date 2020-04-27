@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bivert's Website</title>
+    <title>SpotInvest</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
@@ -54,11 +56,11 @@
             <nav class="main-nav">
                 <ul class="navbar">
                     <li><a href="#" class=navbar-item>HOME</a></li>
-                    <li><a href="#" class=navbar-item>PRICING</a></li>
-                    <li><a href="#" class=navbar-item>FAQ</a></li>
+                    <li><a href="#pricing" class=navbar-item>PRICING</a></li>
+                    <li><a href="faq.html" class=navbar-item>FAQ</a></li>
                 </ul>
             </nav>
-            <a href="#" class="contact-button">CONTACT US</a>
+            <a href="#bottom" class="contact-button">CONTACT US</a>
         </header>
         <section class="call-to-action">
             <div class="call-to-action-text">
@@ -70,7 +72,7 @@
                 <img src="images/twophones.png" alt="">
             </div>
         </section>
-        <div class="pricing-list">
+        <div class="pricing-list" id="pricing">
             <div class="pricing-text">
                 <h2>Our Plans</h2>
                 <p>Get Paid the Double</p>
@@ -127,7 +129,7 @@
                         <div class="you-get">You get: $1575</div>
                         <hr>
                         <div class="border-radius-gradient">
-                            <a href="#" class="buy-now"><span class = "important-button">BUY NOW</span> </a>
+                            <a href="#" class="buy-now"><span class="important-button">BUY NOW</span> </a>
                         </div>
                     </div>
                 </div>
@@ -147,20 +149,20 @@
             </div>
         </div>
     </div>
-        <section class = "bottom">
-            <div class="bottom-text container">
-                <h2>Contact</h2>
-                <p>Join our Discord Server</p>
-                <p>Join the thousands of people interested in investing by clicking the button below. It will lead to a
-                    Discord server where we manage all inquiries and dealings. Let's get started.</p>
-                    <a href="#" class="discord-button"><img src="images/discord.png" alt="Discord logo">CLICK HERE</a>
-            </div>
-        </section>
+    <section class="bottom" id = "bottom">
+        <div class="bottom-text container">
+            <h2>Contact</h2>
+            <p>Join our Discord Server</p>
+            <p>Join the thousands of people interested in investing by clicking the button below. It will lead to a
+                Discord server where we manage all inquiries and dealings. Let's get started.</p>
+            <a href="#" class="discord-button animated pulse infinite"><img src="images/discord.png" alt="Discord logo">CLICK HERE</a>
+        </div>
+    </section>
 
-        <footer>
-            <p>Made with &#128151; by <a href = "https://discordapp.com/invite/85ZFBNj">Cotton Studios</a></p>
-            <p>Bivert &copy; 2020</p>
-        </footer>
+    <footer>
+        <p>Made with &#128151; by <a href="https://discordapp.com/invite/85ZFBNj">Cotton Studios</a></p>
+        <p>Bivert &copy; 2020</p>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.953rem
+}
+
+section {
+    margin: 5rem 0;
+}
+/* .container {
+    min-height: 100vh;
+} */
+.container-faq {
+    max-width: 1000px;
+    margin: 5rem auto 0;
+    padding: 0 1.5rem;
+    flex-grow: 1;
+}
+
+.accordion-item {
+    background-color:white;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+    background-color: white;
+}
+
+.accordion-link {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, .8);
+    text-decoration: none;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-weight: 500;
+}
+
+.accordion-link i {
+    color: #e7d5ff;
+    padding: .5rem;
+}
+
+.accordion-link>ion-icon:nth-child(2) {
+    display: none;
+}
+
+/* max-height 0 to force an element outside of the container and set the overflow to hidden to hide it */
+
+.answer {
+    overflow: hidden;
+    max-height: 0;
+    position: relative;
+    /* background:linear-gradient(to top,#5b5eef, #5fc6f2); */
+    transition: max-height 650ms;
+    line-height: 1.5;
+}
+/* 
+.answer::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+} */
+
+.answer p {
+    color: white;
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+/* when the accordion item is targeted, the .answer would have these set of rules */
+.accordion-item:target {
+    background:linear-gradient(to top,#5b5eef, #5fc6f2);
+}
+.accordion-item:target .accordion-link{
+    background-color: transparent;
+    color: white;
+    padding: 32px 32px 0;
+    font-weight: 700;
+}
+.accordion-item:target .answer {
+    max-height: 30rem;
+}
+
+.accordion-item:target ion-icon:nth-child(1) {
+    display: none;
+}
+
+.accordion-item:target ion-icon:nth-child(2) {
+    display: block;
+} 
+

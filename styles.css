@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+#background {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#svg-background {
+    top: -200px;
+    width: 100%;
+    position: absolute;
+    height: auto;
+    z-index: -1;
+}
+
+#mobile-background {
+    display: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header {
+    font-size: 1.2rem;
+    margin: 0;
+    padding-top: 3.815rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav .navbar a {
+    padding-right: 3.052em;
+    text-decoration: none;
+    color: white;
+}
+
+.main-header .contact-button {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 1rem 3.5rem;
+    border-radius: 3.815rem;
+    font-weight: 500;
+}
+
+.contact-button:hover {
+    background: linear-gradient(to bottom, #ffb196, #ff7b95);
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, #3742eb, #3cb8ef);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    padding: 1.563rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+@media (max-width: 1330px) {
+    .call-to-action .call-to-action-text h1, .call-to-action .call-to-action-text p {
+        color: black;
+    }
+}
+
+@media (max-width: 780px) {
+    /* .call-to-action {
+        background: linear-gradient(22.28deg, #3738EB 10.59%, #3CBBEF 75.17%);
+    } */
+    #svg-background {
+        display: none;
+    }
+    #mobile-background {
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+    .main-header {
+        padding-top: 0;
+    }
+}
