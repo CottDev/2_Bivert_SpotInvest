@@ -90,25 +90,13 @@ footer a {
     border-bottom: 2px solid white;
 }
 
-@media (max-width: 1330px) {
-    .call-to-action .call-to-action-text h1, .call-to-action .call-to-action-text p {
-        color: black;
+@media (max-width: 600px) {
+    .main-header {
+        flex-direction: column;
+    }
+
+    .main-header .contact-button{
+        display: none;
     }
 }
 
-@media (max-width: 780px) {
-    /* .call-to-action {
-        background: linear-gradient(22.28deg, #3738EB 10.59%, #3CBBEF 75.17%);
-    } */
-    #svg-background {
-        display: none;
-    }
-    #mobile-background {
-        display: block;
-        position: absolute;
-        z-index: -1;
-    }
-    .main-header {
-        padding-top: 0;
-    }
-}

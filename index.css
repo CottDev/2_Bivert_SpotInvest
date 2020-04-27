@@ -5,7 +5,7 @@
 }
 
 .call-to-action .call-to-action-text {
-    margin-top: 10rem;
+    padding-top: 10rem;
 }
 
 .call-to-action .call-to-action-text h1 {
@@ -309,6 +309,17 @@ hr {
         z-index: -1;
     }
     .main-header {
-        padding-top: 0;
+        padding-top: 1rem;
     }
+}
+@media (max-width: 600px) {
+    .call-to-action {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .call-to-action .call-to-action-text {
+        padding-top: 5rem;
+    }
+    
 }
