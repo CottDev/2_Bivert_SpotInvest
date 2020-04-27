@@ -311,6 +311,10 @@ hr {
     .main-header {
         padding-top: 1rem;
     }
+
+    .call-to-action .call-to-action-text {
+        padding-top: 6rem;
+    }
 }
 @media (max-width: 600px) {
     .call-to-action {
@@ -320,6 +324,44 @@ hr {
 
     .call-to-action .call-to-action-text {
         padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
+}
+
+@media (max-width: 430px) {
+    .main-nav .navbar a {
+        font-size: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .call-to-action .call-to-action-text h1 {
+        font-size: 3rem;
+    }
+
+    .call-to-action .call-to-action-text,.pricing-list .pricing-text h2, .bottom .bottom-text h2 {
+        font-size: 1.563rem;
+    }
+
+    .pricing-text>p:nth-child(2), .bottom .bottom-text>p:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .pricing-text>p:nth-child(3), .bottom .bottom-text>p:nth-child(3) {
+        font-size: 1.25rem;
+    }
+
+    .discord-button {
+        margin: 1rem auto;
+        padding: 1rem 2rem;
+        font-size: 1.25rem;
+    }
+
+    footer p {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
 }
